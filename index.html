@@ -24,12 +24,16 @@ h2{
 <body>
   <div id="app">
         <h2>Compound Interest Calculator</h2>
+        Principal
         <input type="number" placeholder="Principal" v-model='principal'>
         <br>
+        Rate (%)
         <input type="number" placeholder="Rate" v-model='rate'>
         <br>
+        Time (per year)
         <input type="number" placeholder="Time" v-model='time'>
         <br>
+        Number
         <input type="number" placeholder="Number of times" v-model='ntimes'>
         <br>
         <h4 v-if="answer > 0"><b>The Compound Interest is: {{ answer }}</b></h4>
