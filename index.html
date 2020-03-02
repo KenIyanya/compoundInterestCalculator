@@ -49,7 +49,7 @@ h2{
     },
     computed: {
     answer: function () {
-      let a = this.rate / this.ntimes
+      let a = this.rate / (this.ntimes * 100)
       let b = 1 + a
       let nt = this.ntimes * this.time
       let c = Math.pow(b, nt)
